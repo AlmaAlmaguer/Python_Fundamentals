@@ -24,6 +24,7 @@ print('(1/3)Y=',nina)
 print('Y =', nina,'x 3')
 nina *=3
 y = nina
+
 print ('Y=', y)
 print ('\n')
 

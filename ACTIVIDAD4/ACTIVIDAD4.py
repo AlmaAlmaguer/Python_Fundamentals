@@ -23,7 +23,6 @@ print('(1/3)Y - 15 =6')
 print('(1/3)Y=',nina)
 print('Y =', nina,'x 3')
 nina *=3
-hna = nina
 y = hna
 print ('Y=', y)
 print ('\n')

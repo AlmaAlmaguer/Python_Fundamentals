@@ -12,5 +12,5 @@ print ('\n')
 
 '''PASO 2 Crear una matriz identidad de 6x6 utilizando la función .identity()'''
 midentidad = np.identity(6)
-print (midentidad)
+print(midentidad)
 

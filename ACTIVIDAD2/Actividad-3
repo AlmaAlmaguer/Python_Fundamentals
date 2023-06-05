@@ -1,0 +1,19 @@
+import numpy as np
+
+
+'''PASO 1 VECTOR CON RANGO DE 3 A MI EDAD'''
+vector = list(range(3,31))
+print (vector)
+
+'''PASO 2 ARREGLO CON UN CONJUNTO DADO  '''
+arreglo =np.array([0, 1, 2, 3, 4, 0, 1, 2, 3, 4])
+print(arreglo)
+
+'''PASO 3 ORDENAR ASCENDIENTE EL ARREGLO'''
+
+arreglo.sort()
+
+print (arreglo)
+
+
+

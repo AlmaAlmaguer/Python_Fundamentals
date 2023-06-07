@@ -21,6 +21,7 @@ if np.isnan (x1):
 else:
     print ('X1=', x1)
 
+
 if np.isnan (x2):
     print('X2 es un valor imaginario')
 else:

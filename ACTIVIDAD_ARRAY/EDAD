@@ -1,0 +1,32 @@
+'''Hagamos un programa que determine si eres mayor de edad o no utilizando las funciones if y else. 
+Para esto, se debe crear una variable donde el usuario pueda ingresar su edad (utiliza un input para este paso)
+ y el programa despliegue un mensaje que muestre si es mayor de edad (>= 18 años) o menor de edad.'''
+
+def MayorEdad (nombre,edad):
+    if(edad>=18):
+        print( nombre,'es mayor de edad')
+    else:
+        print(nombre,' es menor de edad')
+
+
+edad = int( input(" Ingrese su edad:"))
+MayorEdad('Usted',edad)
+
+'''   Hagamos un programa que le pida al usuario que ingrese dos nombres con su respectivas edades y muestre quién de ellos es mayor. 
+    Para dicha actividad, el usuario debe ingresar dos nombres y dos edades distintas,
+    para que después el programa identifique quién de ellos es mayor e imprima el nombre del mayor, su edad y si es mayor o menor de edad.'''
+
+personas = list()
+for i in range(2):
+    print('\n')
+    nombre = input("Ingrese su nombre: ")
+    edad = int(input("Ingrese su edad: "))
+    personas.append([nombre,edad])
+
+personas.sort(key=lambda personas:personas[1],reverse=True)
+print('\n')
+print(personas[0][0], 'ES MAYOR,', 'SU EDAD ES:',personas[0][1], 'ANIOS')
+MayorEdad(personas[0][0],personas[0][1])
+
+
+

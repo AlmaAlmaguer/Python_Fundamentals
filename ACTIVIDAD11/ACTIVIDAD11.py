@@ -2,6 +2,7 @@
 imprimir los valores del diccionario (nombre de la persona y número que dijo) (Usando un bucle for)
 imprimirán dos mensajes, mostrando el número más grande, y el número más pequeño que dijeron, sin el nombre del socio, sólo el número.
 '''
+
 jugadores=0
 persona = 'S'
 diccionario = {}

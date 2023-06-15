@@ -5,6 +5,7 @@ Correo:alma.almaguer@oxxo.com
 Capacitación : 9 am -15 junio -2023
 '''
 
+
 import numpy 
 
 def Validar(rango):

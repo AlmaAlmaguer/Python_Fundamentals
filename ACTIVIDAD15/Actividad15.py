@@ -3,8 +3,9 @@ Obtener la diferencia entre el salario más alto y el más bajo dentro de los da
 Para esto, se debe encontrar el valor máximo y restarle el valor mínimo de los datos 
 (la respuesta a esta operación se llama rango de los datos).
 '''
-import numpy
+import numpy as np
 import pandas as pd
+
 
 salarios={
     "Nombre":["Ringo","John","Paul","Geroge","Yoko"],
@@ -20,11 +21,9 @@ pago_split= salarios["Salario"]
 rango = max(pago_split) - min(pago_split)
 
 
+print('Los Salarios son:', pago_split)
+print ('El rango es:', rango)
 
-print('arreglo', pago_split)
-print('min_salario:',min_salario)
-print('max_salario:',max_salario)
-print ('rango', rango)
 
 
 

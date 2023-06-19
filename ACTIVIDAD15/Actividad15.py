@@ -6,7 +6,6 @@ Para esto, se debe encontrar el valor máximo y restarle el valor mínimo de los
 import numpy as np
 import pandas as pd
 
-
 salarios={
     "Nombre":["Ringo","John","Paul","Geroge","Yoko"],
     "Edad":[45,34,42,38,47],
@@ -20,10 +19,5 @@ pago_split= salarios["Salario"]
 
 rango = max(pago_split) - min(pago_split)
 
-
-print('Los Salarios son:', pago_split)
-print ('El rango es:', rango)
-
-
-
+print(''rango)
 

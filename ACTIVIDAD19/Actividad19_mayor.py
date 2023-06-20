@@ -51,7 +51,7 @@ ax.set_title('Scores by group and gender')
 ax.set_xticks(x)
 ax.set_xticklabels(school_labels)
 ax.legend()
-
+ax.figsize = [30,8]
 
 def autolabel(rects):
     """Attach a text label above each bar in *rects*, displaying its height."""

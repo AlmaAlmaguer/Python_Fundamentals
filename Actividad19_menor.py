@@ -24,13 +24,13 @@ escuelas = alumnos['school_name'].unique()
 
 for escuela in escuelas:
     escu = alumnos[alumnos['school_name'] == escuela]
-    max_reading = escu['reading_score'].max()
+    min_reading = escu['reading_score'].min()
     score_type= escu['reading_score'].unique()
     score_qty = score_type.size
     perc = score_qty *.10
     perc = round(perc)
-    sorted_scores = np.sort(score_type)[::-1]
-    puntaje_reading = escu[escu['reading_score'] > sorted_scores[perc]]
+    sorted_scores = np.sort(score_type)
+    puntaje_reading = escu[escu['reading_score'] < sorted_scores[perc]]
     gender_type = puntaje_reading['gender'].unique()
     gender_qty = puntaje_reading['gender'].value_counts().tolist()
     formato_esc = escuela.replace(' ', '\n')

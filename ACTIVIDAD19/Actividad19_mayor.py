@@ -10,6 +10,7 @@ Es importante imprimir el resultado de cuál es el género que mejor puntaje obt
 facilitar la interpretación de los resultados para el usuario.
 '''
 
+
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd

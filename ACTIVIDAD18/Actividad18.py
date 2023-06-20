@@ -33,3 +33,5 @@ plt.xlabel("GRADOS")
 plt.ylabel("ALUMNOS")
 
 plt.show()
+
+plt.savefig("ACTIVIDAD18/Grafic_alumnos.png")

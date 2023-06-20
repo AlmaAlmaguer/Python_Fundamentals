@@ -1,9 +1,4 @@
 '''
-Crea una gráfica que describa cuántos alumnos por escuela tuvieron el mejor puntaje en "reading" 
-(mejor 10% de los puntajes), y con ello saber qué género es el que predomina en este filtro. 
-Es importante imprimir el resultado de cuál es el género que mejor puntaje obtuvo para
- facilitar la interpretación de los resultados para el usuario.
-
 Crea una gráfica que describa cuántos alumnos por escuela tuvieron el peor puntaje en "reading" 
 (peor 10% de los puntajes), y con ello saber qué género es el que predomina en este filtro. 
 Es importante imprimir el resultado de cuál es el género que mejor puntaje obtuvo para 

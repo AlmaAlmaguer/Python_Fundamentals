@@ -9,6 +9,7 @@ Crea una gráfica que describa cuántos alumnos por escuela tuvieron el peor pun
 Es importante imprimir el resultado de cuál es el género que mejor puntaje obtuvo para 
 facilitar la interpretación de los resultados para el usuario.
 '''
+
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd

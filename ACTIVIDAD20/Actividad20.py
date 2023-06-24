@@ -83,7 +83,7 @@ autolabel(no_aprove_Math)
 fig.tight_layout()
 
 plt.show()
-plt.savefig("ACTIVIDAD19/Grafic_reading.png")
+plt.savefig("ACTIVIDAD20/Grafic_reading.png")
 
 
 

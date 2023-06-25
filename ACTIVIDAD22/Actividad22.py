@@ -9,12 +9,10 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 school_labels=[]
-school_men=[]
-school_wom=[]
+first_place=[]
+second_place=[]
 
-alumnos = pd.read_csv("ACTIVIDAD18/cleanstudentscomplete-1-1.csv")
-#alumnos = alumnos[["school_name","reading_score", "gender"]]
-
+alumnos = pd.read_csv("ACTIVIDAD20/cleanstudentscomplete-2.csv")
 escuelas = alumnos['school_name'].unique()
 
 for escuela in escuelas:
@@ -30,27 +28,21 @@ for escuela in escuelas:
     puntaje_reading['Last'] = (puntaje_reading['student_name'].str.split(expand=True))[1]
     Last_type = puntaje_reading['Last'].unique()
     Last_qty = puntaje_reading['Last'].value_counts().tolist()
-    
+
     Last_1 = puntaje_reading[puntaje_reading['Last'] == Last_type[0]]
     max_reading_1 = Last_1['reading_score'].max()
-    #Last_2 = puntaje_reading[puntaje_reading['Last'] == Last_type[1]]
-    #max_reading_2 = Last_2['reading_score'].max()
-    
+
     formato_esc = escuela.replace(' ', '\n')
-    #formato_esc = "1er-" + Last_type[0] + " \n " + "2do-" +  Last_type[1] + "\n" + formato_esc
     formato_esc = Last_type[0] + "\n" + formato_esc
     school_labels.append(formato_esc)
-    school_men.append(max_reading_1)
-    #school_wom.append(max_reading_2)
+    first_place.append(max_reading_1)
 
-x = np.arange(len(school_labels))  # the label locations
+x = np.arange(len(school_labels)) # the label locations
 width = 0.35  # the width of the bars
 
 fig, ax = plt.subplots()
-rects1 = ax.bar(x - width/2, school_men, width, label='1er')
-#rects2 = ax.bar(x + width/2, school_wom, width, label='2do')
+rects1 = ax.bar(x - width/2, first_place, width, label='1er')
 
-# Add some text for labels, title and custom x-axis tick labels, etc.
 ax.set_ylabel('Scores')
 ax.set_title('Scores by group and gender')
 ax.set_xticks(x)
@@ -67,14 +59,8 @@ def autolabel(rects):
                     xytext=(0, 3),  # 3 points vertical offset
                     textcoords="offset points",
                     ha='center', va='bottom')
-
 autolabel(rects1)
-#autolabel(rects2)
 
 fig.tight_layout()
-
 plt.show()
 plt.savefig("ACTIVIDAD19/Grafic_reading.png")
-
-
-
